@@ -27,7 +27,7 @@ describe ('Calculator', () => {
     expect(calculator.jupiterAge).toEqual(2);
   })
   test('should return the inputted sex of the user', () => {
-    expect(calculator.lifeExp).toEqual('male');
+    expect(calculator.sex).toEqual('male');
   })
 
 });

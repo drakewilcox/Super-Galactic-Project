@@ -11,6 +11,9 @@ export class Calculator {
   addAge(age) {
     this.age = age;
   }
+  addSex(sex) {
+    this.sex = sex;
+  }
   mercury() {
     this.mercuryAge = Math.floor(this.age / .24);
   }
