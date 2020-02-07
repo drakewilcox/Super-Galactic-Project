@@ -5,6 +5,7 @@ describe ('Calculator', () => {
   beforeEach(() => {
     calculator = new Calculator();
     calculator.addAge(30);
+    calculator.addSex('male');
   });
   test('should return the inputted age of the user', () => {
     expect(calculator.age).toEqual(30);
@@ -24,6 +25,9 @@ describe ('Calculator', () => {
   test('should return the age of the user as age on Jupiter', () => {
     calculator.jupiter();
     expect(calculator.jupiterAge).toEqual(2);
+  })
+  test('should return the inputted sex of the user', () => {
+    expect(calculator.lifeExp).toEqual('male');
   })
 
 });
