@@ -5,7 +5,7 @@ describe ('Calculator', () => {
   beforeEach(() => {
     calculator = new Calculator();
     calculator.addAge(30);
-    calculator.addSex('male');
+    // calculator.addSex('male');
   });
   test('should return the inputted age of the user', () => {
     expect(calculator.age).toEqual(30);
@@ -13,21 +13,32 @@ describe ('Calculator', () => {
   test('should return the age of user as age on Mercury', () => {
     calculator.mercury();
     expect(calculator.mercuryAge).toEqual(125);
-  })
+  });
   test('should return the age of user as age on Venus', () => {
     calculator.venus();
     expect(calculator.venusAge).toEqual(48);
-  })
+  });
   test('should return the age of the user as age on Mars', () => {
     calculator.mars();
     expect(calculator.marsAge).toEqual(15);
-  })
+  });
   test('should return the age of the user as age on Jupiter', () => {
     calculator.jupiter();
     expect(calculator.jupiterAge).toEqual(2);
-  })
+  });
   test('should return the inputted sex of the user', () => {
+    calculator.addSex('male')
     expect(calculator.sex).toEqual('male');
-  })
+  });
+  test('should return the life expetency of user based on input of male', () => {
+    calculator.addSex('male');
+    calculator.exp();
+    expect(calculator.lifeExp).toEqual(76);
+  });
+  test('should return the life expetency of user based on input of female', () => {
+      calculator.addSex('female');
+      calculator.exp();
+      expect(calculator.lifeExp).toEqual(81);
+  });
 
 });

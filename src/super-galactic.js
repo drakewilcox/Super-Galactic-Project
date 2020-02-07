@@ -6,7 +6,7 @@ export class Calculator {
     this.marsAge = "";
     this.jupiterAge = "";
     this.sex = "";
-    this.lifeExp = "";
+    this.lifeExp = 0;
   }
   addAge(age) {
     this.age = age;
@@ -27,4 +27,13 @@ export class Calculator {
   jupiter() {
     this.jupiterAge = Math.floor(this.age / 11.86);
   }
+  exp() {
+    if (this.sex === 'male') {
+      this.lifeExp = 76;
+    } else if (this.sex === 'female') {
+      this.lifeExp = 81;
+      console.log(this.lifeExp);
+    }
+  }
+
 }
