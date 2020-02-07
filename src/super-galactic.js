@@ -11,4 +11,8 @@ export class Calculator {
   addAge(age) {
     this.age = age;
   }
+  mercury() {
+    this.mercuryAge = this.age / .24;
+    console.log(this.mercuryAge);
+  }
 }
