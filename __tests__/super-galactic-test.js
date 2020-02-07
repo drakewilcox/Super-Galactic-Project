@@ -21,5 +21,9 @@ describe ('Calculator', () => {
     calculator.mars();
     expect(calculator.marsAge).toEqual(15);
   })
+  test('should return the age of the user as age on Jupiter', () => {
+    calculator.jupiter();
+    expect(calculator.jupiter).toEqual(2);
+  })
 
 });
