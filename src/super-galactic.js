@@ -34,5 +34,8 @@ export class Calculator {
       this.lifeExp = 81;
     }
   }
-
+  lifeLeft() {
+    let lifeLeft = this.lifeExp - this.age 
+    return lifeLeft; 
+  }
 }

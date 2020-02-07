@@ -40,7 +40,7 @@ describe ('Calculator', () => {
   });
   test('should return the mount of years that user has to live based on life expetency', () => {
     calculator.exp();
-    expect(calculator.lifeLeft()).toEqual(51);
+    expect(calculator.lifeLeft()).toEqual(46);
   })
 
 });
