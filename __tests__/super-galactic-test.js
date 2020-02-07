@@ -5,7 +5,7 @@ describe ('Calculator', () => {
   beforeEach(() => {
     calculator = new Calculator();
     calculator.addAge(30);
-    // calculator.addSex('male');
+    calculator.addSex('male');
   });
   test('should return the inputted age of the user', () => {
     expect(calculator.age).toEqual(30);
@@ -27,11 +27,9 @@ describe ('Calculator', () => {
     expect(calculator.jupiterAge).toEqual(2);
   });
   test('should return the inputted sex of the user', () => {
-    calculator.addSex('male')
     expect(calculator.sex).toEqual('male');
   });
   test('should return the life expetency of user based on input of male', () => {
-    calculator.addSex('male');
     calculator.exp();
     expect(calculator.lifeExp).toEqual(76);
   });
@@ -40,5 +38,9 @@ describe ('Calculator', () => {
       calculator.exp();
       expect(calculator.lifeExp).toEqual(81);
   });
+  test('should return the mount of years that user has to live based on life expetency', () => {
+    calculator.exp();
+    expect(calculator.lifeLeft()).toEqual(51);
+  })
 
 });

@@ -32,7 +32,6 @@ export class Calculator {
       this.lifeExp = 76;
     } else if (this.sex === 'female') {
       this.lifeExp = 81;
-      console.log(this.lifeExp);
     }
   }
 
