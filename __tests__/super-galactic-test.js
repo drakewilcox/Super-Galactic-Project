@@ -42,5 +42,11 @@ describe ('Calculator', () => {
     calculator.exp();
     expect(calculator.lifeLeft()).toEqual(46);
   })
+  test('should return the amount of years user has left to live on Mercury'), () => {
+    calculator.exp();
+    calculator.Lifeleft();
+    calculator.mercury();
+    expect(calculator.mercuryAge).toEqual()
+  }
 
 });

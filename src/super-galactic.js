@@ -7,6 +7,7 @@ export class Calculator {
     this.jupiterAge = "";
     this.sex = "";
     this.lifeExp = 0;
+    this.lifeLeft = ""
   }
   addAge(age) {
     this.age = age;
@@ -35,7 +36,10 @@ export class Calculator {
     }
   }
   lifeLeft() {
-    let lifeLeft = this.lifeExp - this.age 
-    return lifeLeft; 
+    this.lifeLeft = this.lifeExp - this.age 
+    this.age = this.lifeLeft
+    console.log(this.age);
+    return this.lifeLeft
+    
   }
 }
