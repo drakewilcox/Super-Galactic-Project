@@ -23,7 +23,7 @@ describe ('Calculator', () => {
   })
   test('should return the age of the user as age on Jupiter', () => {
     calculator.jupiter();
-    expect(calculator.jupiter).toEqual(2);
+    expect(calculator.jupiterAge).toEqual(2);
   })
 
 });

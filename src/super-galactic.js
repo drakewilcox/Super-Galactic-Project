@@ -20,6 +20,8 @@ export class Calculator {
 
   mars() {
     this.marsAge = Math.floor(this.age / 1.88);
-   
+  }
+  jupiter() {
+    this.jupiterAge = Math.floor(this.age / 11.86);
   }
 }
