@@ -17,5 +17,8 @@ describe ('Calculator', () => {
     calculator.venus();
     expect(calculator.venusAge).toEqual(48);
   })
+  test('should return the age of the user as age on Mars', () => {
+    expect(calculator.venus()).toEqual(15);
+  })
 
 });

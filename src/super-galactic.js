@@ -12,11 +12,9 @@ export class Calculator {
     this.age = age;
   }
   mercury() {
-    this.mercuryAge = this.age / .24;
+    this.mercuryAge = Math.floor(this.age / .24);
   }
   venus() {
    this.venusAge = Math.floor(this.age / .62);
-  
   }
-
 }
