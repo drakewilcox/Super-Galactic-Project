@@ -4,5 +4,6 @@ export class Calculator {
   }
   addAge(age) {
     this.age = age;
+  
   }
 }
