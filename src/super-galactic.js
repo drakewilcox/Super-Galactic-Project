@@ -39,14 +39,14 @@ export class Calculator {
     }
   }
   lifeLeft() {
-    if(this.age > this.lifeExp) {
+    if (this.age > this.lifeExp) {
       this.lifeOverExp = this.age - this.lifeExp;
       console.log(this.liveOverExp);
     } else {
       this.lifeLeft = this.lifeExp - this.age; 
       console.log(this.lifeLeft);
-      return this.lifeLeft
     }
+    return this.lifeLeft
   }
   planetLifeLeft() {
     const planetLifeLeft = {mercury: "", venus: "", mars: "", jupiter: ""}
