@@ -42,11 +42,13 @@ describe ('Calculator', () => {
     calculator.exp();
     expect(calculator.lifeLeft()).toEqual(46);
   })
-  test('should return the amount of years user has left to live on Mercury'), () => {
+  test('should return the amount of years user has left to live on each planet', () => {
     calculator.exp();
-    calculator.Lifeleft();
-    calculator.mercury();
-    expect(calculator.mercuryAge).toEqual()
-  }
+    calculator.lifeLeft();
+    calculator.planetLifeLeft();
+    expect(calculator.planetLifeLeft.mercury).toEqual(191);
+    expect(calculator.planetLifeLeft.venus).toEqual(73);
+    
+  });
 
 });
