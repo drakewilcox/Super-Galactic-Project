@@ -28,9 +28,11 @@ _This Project is an exercise in using Test Driven Development _
     Input: Male Output : 76
 8. Return life expectancy if user is female
     Input: Female Output: 81
-9. Return amount of years the user has to live on each planet
+9. Return amount of years the user has to live based on life expectancy
+    Input: Sex-Male Age-30 Output: 46
+10. Return amount of years the user has to live on each planet
     Input: Sex-Male Age-30 Planet-Mars Output: 24
-10. Return the amount of years a user has lived past life-expectancy if applicaple
+11. Return the amount of years a user has lived past life-expectancy if applicaple
     Input: Sex-Male Age- 80 Output: 4
 
 ## Setup/Installation Requirements

@@ -9,6 +9,7 @@ export class Calculator {
     this.lifeExp = 0;
     this.lifeLeft = ""
     this.planetLifeLeft = [];
+    this.lifeOverExp = ""
     
   }
   addAge(age) {
@@ -18,9 +19,7 @@ export class Calculator {
     this.sex = sex;
   }
   mercury() {
-    console.log(this.age);
     this.mercuryAge = Math.floor(this.age / .24);
-    console.log(this.mercuryAge);
   }
   venus() {
    this.venusAge = Math.floor(this.age / .62);
@@ -40,9 +39,14 @@ export class Calculator {
     }
   }
   lifeLeft() {
-    this.lifeLeft = this.lifeExp - this.age 
-    console.log(this.age);
-    return this.lifeLeft
+    if(this.age > this.lifeExp) {
+      this.lifeOverExp = this.age - this.lifeExp;
+      console.log(this.liveOverExp);
+    } else {
+      this.lifeLeft = this.lifeExp - this.age; 
+      console.log(this.lifeLeft);
+      return this.lifeLeft
+    }
   }
   planetLifeLeft() {
     const planetLifeLeft = {mercury: "", venus: "", mars: "", jupiter: ""}
@@ -52,6 +56,5 @@ export class Calculator {
     planetLifeLeft.jupiter = Math.floor(this.lifeLeft / 11.86);
 
     this.planetLifeLeft = planetLifeLeft;
-    console.log(this.planetLifeLeft);
   }
 }
