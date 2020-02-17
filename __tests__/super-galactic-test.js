@@ -57,4 +57,14 @@ describe ('Calculator', () => {
     calculator.lifeLeft();
     expect(calculator.lifeOverExp).toEqual(14);
   });
+  test('should return the amount of years user has lived over the life expectancy on each planet', () => {
+    calculator.exp();
+    calculator.addAge(90);
+    calculator.lifeLeft();
+    calculator.planetLifeLeftOver();
+    expect(calculator.planetLifeLeftOver.mercury).toEqual(58);
+    expect(calculator.planetLifeLeftOver.venus).toEqual(22);
+    expect(calculator.planetLifeLeftOver.mars).toEqual(7);
+    expect(calculator.planetLifeLeftOver.jupiter).toEqual(1)
+  });
 });
