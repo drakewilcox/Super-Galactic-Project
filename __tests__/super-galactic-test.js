@@ -38,10 +38,10 @@ describe ('Calculator', () => {
       calculator.exp();
       expect(calculator.lifeExp).toEqual(81);
   });
-  test('should return the mount of years that user has to live based on life expetency', () => {
+  test('should return the amount of years that user has to live based on life expetency', () => {
     calculator.exp();
     expect(calculator.lifeLeft()).toEqual(46);
-  })
+  });
   test('should return the amount of years user has left to live on each planet', () => {
     calculator.exp();
     calculator.lifeLeft();
@@ -51,14 +51,10 @@ describe ('Calculator', () => {
     expect(calculator.planetLifeLeft.mars).toEqual(24);
     expect(calculator.planetLifeLeft.jupiter).toEqual(3);
   });
-  
-    test('should return life over expectancy', () =>{
-      calculator.addAge(90);
-      calculator.exp();
-      calculator.lifeLeft();
-      expect(calculator.lifeOverExp).toEqual(14);
-    });
-    
-
-
+  test('should return life over expectancy', () =>{
+    calculator.addAge(90);
+    calculator.exp();
+    calculator.lifeLeft();
+    expect(calculator.lifeOverExp).toEqual(14);
+  });
 });
